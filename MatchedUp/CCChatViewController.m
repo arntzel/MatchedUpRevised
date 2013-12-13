@@ -132,6 +132,8 @@
         [self.chats addObject:chat];
         [JSMessageSoundEffect playMessageSentSound];
         [self.tableView reloadData];
+        [self finishSend];
+        [self scrollToBottomAnimated:YES];
     }];
     
     
@@ -155,9 +157,7 @@
      
      */
     
-    [self finishSend];
-    [self scrollToBottomAnimated:YES];
-}
+   }
 
 - (JSBubbleMessageType)messageTypeForRowAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -107,6 +107,7 @@
             PFFile *pictureFile = photo[kCCPhotoPictureKey];
             [pictureFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
                 cell.imageView.image = [UIImage imageWithData:data];
+                cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
             }];
         }
     }];
