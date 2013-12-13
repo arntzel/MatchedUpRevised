@@ -13,7 +13,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"GYacBYciv3ISqXOi66cbkoi7pRIzNn8zU6QgeBZ9"
+                  clientKey:@"Sr8CdWo6f37yAkKHYJkxK77Ndcj56U0SsBulBRa0"];
+    [PFFacebookUtils initializeFacebook];
+    
     return YES;
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [PFFacebookUtils handleOpenURL:url];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

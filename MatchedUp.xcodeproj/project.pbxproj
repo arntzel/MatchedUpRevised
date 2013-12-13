@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F03DFDE18537BE100E4428E /* CCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F03DFDD18537BE100E4428E /* CCHomeViewController.m */; };
+		6F03DFE21853802E00E4428E /* CCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F03DFE11853802E00E4428E /* CCSettingsViewController.m */; };
+		6F03DFE6185382AC00E4428E /* CCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F03DFE5185382AC00E4428E /* CCEditProfileViewController.m */; };
+		6F03DFEB185386A400E4428E /* CCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F03DFEA185386A400E4428E /* CCProfileViewController.m */; };
+		6F03DFED1853D06400E4428E /* ProfileImage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6F03DFEC1853D06400E4428E /* ProfileImage1.jpeg */; };
+		6F03DFF11853D29100E4428E /* CCTestUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F03DFF01853D29100E4428E /* CCTestUser.m */; };
+		6FA3C837185AA7EA00C93653 /* CCMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C835185AA7EA00C93653 /* CCMatchesViewController.m */; };
+		6FA3C83A185AA7EF00C93653 /* CCMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C838185AA7EF00C93653 /* CCMatchViewController.m */; };
+		6FA3C83D185AA7F400C93653 /* CCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3C83B185AA7F400C93653 /* CCChatViewController.m */; };
+		6FA3C83F185ACC6200C93653 /* avatar-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA3C83E185ACC6200C93653 /* avatar-placeholder.png */; };
 		6FBDE855184A719D003F0CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE854184A719D003F0CA4 /* Foundation.framework */; };
 		6FBDE857184A719D003F0CA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE856184A719D003F0CA4 /* CoreGraphics.framework */; };
 		6FBDE859184A719D003F0CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE858184A719D003F0CA4 /* UIKit.framework */; };
@@ -14,14 +24,15 @@
 		6FBDE861184A719D003F0CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE860184A719D003F0CA4 /* main.m */; };
 		6FBDE865184A719D003F0CA4 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE864184A719D003F0CA4 /* CCAppDelegate.m */; };
 		6FBDE868184A719D003F0CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBDE866184A719D003F0CA4 /* Main.storyboard */; };
-		6FBDE86B184A719D003F0CA4 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE86A184A719D003F0CA4 /* CCFirstViewController.m */; };
-		6FBDE86E184A719D003F0CA4 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE86D184A719D003F0CA4 /* CCSecondViewController.m */; };
 		6FBDE870184A719D003F0CA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FBDE86F184A719D003F0CA4 /* Images.xcassets */; };
 		6FBDE877184A719D003F0CA4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE876184A719D003F0CA4 /* XCTest.framework */; };
 		6FBDE878184A719D003F0CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE854184A719D003F0CA4 /* Foundation.framework */; };
 		6FBDE879184A719D003F0CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE858184A719D003F0CA4 /* UIKit.framework */; };
 		6FBDE881184A719D003F0CA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FBDE87F184A719D003F0CA4 /* InfoPlist.strings */; };
 		6FBDE883184A719D003F0CA4 /* MatchedUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE882184A719D003F0CA4 /* MatchedUpTests.m */; };
+		6FBDE88E184A7226003F0CA4 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE88D184A7226003F0CA4 /* CCLoginViewController.m */; };
+		6FBDE892184A960B003F0CA4 /* CCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDE891184A960B003F0CA4 /* CCConstants.m */; };
+		98054200DECE43539D9C1ADC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B888B4740509451DBE540231 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F03DFDC18537BE100E4428E /* CCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHomeViewController.h; sourceTree = "<group>"; };
+		6F03DFDD18537BE100E4428E /* CCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHomeViewController.m; sourceTree = "<group>"; };
+		6F03DFE01853802E00E4428E /* CCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSettingsViewController.h; sourceTree = "<group>"; };
+		6F03DFE11853802E00E4428E /* CCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSettingsViewController.m; sourceTree = "<group>"; };
+		6F03DFE4185382AC00E4428E /* CCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEditProfileViewController.h; sourceTree = "<group>"; };
+		6F03DFE5185382AC00E4428E /* CCEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEditProfileViewController.m; sourceTree = "<group>"; };
+		6F03DFE9185386A400E4428E /* CCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProfileViewController.h; sourceTree = "<group>"; };
+		6F03DFEA185386A400E4428E /* CCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCProfileViewController.m; sourceTree = "<group>"; };
+		6F03DFEC1853D06400E4428E /* ProfileImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ProfileImage1.jpeg; sourceTree = "<group>"; };
+		6F03DFEF1853D29100E4428E /* CCTestUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTestUser.h; sourceTree = "<group>"; };
+		6F03DFF01853D29100E4428E /* CCTestUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTestUser.m; sourceTree = "<group>"; };
+		6FA3C835185AA7EA00C93653 /* CCMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMatchesViewController.m; sourceTree = "<group>"; };
+		6FA3C836185AA7EA00C93653 /* CCMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMatchesViewController.h; sourceTree = "<group>"; };
+		6FA3C838185AA7EF00C93653 /* CCMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMatchViewController.m; sourceTree = "<group>"; };
+		6FA3C839185AA7EF00C93653 /* CCMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMatchViewController.h; sourceTree = "<group>"; };
+		6FA3C83B185AA7F400C93653 /* CCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChatViewController.m; sourceTree = "<group>"; };
+		6FA3C83C185AA7F400C93653 /* CCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChatViewController.h; sourceTree = "<group>"; };
+		6FA3C83E185ACC6200C93653 /* avatar-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-placeholder.png"; sourceTree = "<group>"; };
 		6FBDE851184A719D003F0CA4 /* MatchedUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchedUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBDE854184A719D003F0CA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6FBDE856184A719D003F0CA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,16 +75,18 @@
 		6FBDE863184A719D003F0CA4 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
 		6FBDE864184A719D003F0CA4 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
 		6FBDE867184A719D003F0CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6FBDE869184A719D003F0CA4 /* CCFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCFirstViewController.h; sourceTree = "<group>"; };
-		6FBDE86A184A719D003F0CA4 /* CCFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCFirstViewController.m; sourceTree = "<group>"; };
-		6FBDE86C184A719D003F0CA4 /* CCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSecondViewController.h; sourceTree = "<group>"; };
-		6FBDE86D184A719D003F0CA4 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
 		6FBDE86F184A719D003F0CA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6FBDE875184A719D003F0CA4 /* MatchedUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchedUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBDE876184A719D003F0CA4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6FBDE87E184A719D003F0CA4 /* MatchedUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchedUpTests-Info.plist"; sourceTree = "<group>"; };
 		6FBDE880184A719D003F0CA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FBDE882184A719D003F0CA4 /* MatchedUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchedUpTests.m; sourceTree = "<group>"; };
+		6FBDE88C184A7226003F0CA4 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
+		6FBDE88D184A7226003F0CA4 /* CCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLoginViewController.m; sourceTree = "<group>"; };
+		6FBDE890184A960B003F0CA4 /* CCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCConstants.h; sourceTree = "<group>"; };
+		6FBDE891184A960B003F0CA4 /* CCConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCConstants.m; sourceTree = "<group>"; };
+		B888B4740509451DBE540231 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DDCE11EFAD42F19C7B833B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +97,7 @@
 				6FBDE857184A719D003F0CA4 /* CoreGraphics.framework in Frameworks */,
 				6FBDE859184A719D003F0CA4 /* UIKit.framework in Frameworks */,
 				6FBDE855184A719D003F0CA4 /* Foundation.framework in Frameworks */,
+				98054200DECE43539D9C1ADC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +114,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F03DFD918537BA500E4428E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6F03DFDC18537BE100E4428E /* CCHomeViewController.h */,
+				6F03DFDD18537BE100E4428E /* CCHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		6F03DFDF1853801200E4428E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6F03DFE01853802E00E4428E /* CCSettingsViewController.h */,
+				6F03DFE11853802E00E4428E /* CCSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		6F03DFE31853827500E4428E /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6F03DFE4185382AC00E4428E /* CCEditProfileViewController.h */,
+				6F03DFE5185382AC00E4428E /* CCEditProfileViewController.m */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		6F03DFE81853868800E4428E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6F03DFE9185386A400E4428E /* CCProfileViewController.h */,
+				6F03DFEA185386A400E4428E /* CCProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		6F03DFEE1853D27700E4428E /* CreateParseUser */ = {
+			isa = PBXGroup;
+			children = (
+				6F03DFEF1853D29100E4428E /* CCTestUser.h */,
+				6F03DFF01853D29100E4428E /* CCTestUser.m */,
+			);
+			name = CreateParseUser;
+			sourceTree = "<group>";
+		};
+		6FA3C832185AA70C00C93653 /* Match! */ = {
+			isa = PBXGroup;
+			children = (
+				6FA3C839185AA7EF00C93653 /* CCMatchViewController.h */,
+				6FA3C838185AA7EF00C93653 /* CCMatchViewController.m */,
+			);
+			name = "Match!";
+			sourceTree = "<group>";
+		};
+		6FA3C833185AA7D500C93653 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				6FA3C836185AA7EA00C93653 /* CCMatchesViewController.h */,
+				6FA3C835185AA7EA00C93653 /* CCMatchesViewController.m */,
+			);
+			name = Matches;
+			sourceTree = "<group>";
+		};
+		6FA3C834185AA7D900C93653 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				6FA3C83C185AA7F400C93653 /* CCChatViewController.h */,
+				6FA3C83B185AA7F400C93653 /* CCChatViewController.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
 		6FBDE848184A719D003F0CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +193,7 @@
 				6FBDE87C184A719D003F0CA4 /* MatchedUpTests */,
 				6FBDE853184A719D003F0CA4 /* Frameworks */,
 				6FBDE852184A719D003F0CA4 /* Products */,
+				E9DDCE11EFAD42F19C7B833B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +213,7 @@
 				6FBDE856184A719D003F0CA4 /* CoreGraphics.framework */,
 				6FBDE858184A719D003F0CA4 /* UIKit.framework */,
 				6FBDE876184A719D003F0CA4 /* XCTest.framework */,
+				B888B4740509451DBE540231 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,10 +224,15 @@
 				6FBDE863184A719D003F0CA4 /* CCAppDelegate.h */,
 				6FBDE864184A719D003F0CA4 /* CCAppDelegate.m */,
 				6FBDE866184A719D003F0CA4 /* Main.storyboard */,
-				6FBDE869184A719D003F0CA4 /* CCFirstViewController.h */,
-				6FBDE86A184A719D003F0CA4 /* CCFirstViewController.m */,
-				6FBDE86C184A719D003F0CA4 /* CCSecondViewController.h */,
-				6FBDE86D184A719D003F0CA4 /* CCSecondViewController.m */,
+				6FBDE88F184A722A003F0CA4 /* Login */,
+				6F03DFD918537BA500E4428E /* Home */,
+				6F03DFDF1853801200E4428E /* Settings */,
+				6F03DFE31853827500E4428E /* EditProfile */,
+				6F03DFE81853868800E4428E /* Profile */,
+				6FA3C832185AA70C00C93653 /* Match! */,
+				6FA3C833185AA7D500C93653 /* Matches */,
+				6FA3C834185AA7D900C93653 /* Chat */,
+				6F03DFEE1853D27700E4428E /* CreateParseUser */,
 				6FBDE86F184A719D003F0CA4 /* Images.xcassets */,
 				6FBDE85B184A719D003F0CA4 /* Supporting Files */,
 			);
@@ -131,6 +242,10 @@
 		6FBDE85B184A719D003F0CA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6FA3C83E185ACC6200C93653 /* avatar-placeholder.png */,
+				6F03DFEC1853D06400E4428E /* ProfileImage1.jpeg */,
+				6FBDE890184A960B003F0CA4 /* CCConstants.h */,
+				6FBDE891184A960B003F0CA4 /* CCConstants.m */,
 				6FBDE85C184A719D003F0CA4 /* MatchedUp-Info.plist */,
 				6FBDE85D184A719D003F0CA4 /* InfoPlist.strings */,
 				6FBDE860184A719D003F0CA4 /* main.m */,
@@ -157,6 +272,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6FBDE88F184A722A003F0CA4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6FBDE88C184A7226003F0CA4 /* CCLoginViewController.h */,
+				6FBDE88D184A7226003F0CA4 /* CCLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FBDE886184A719D003F0CA4 /* Build configuration list for PBXNativeTarget "MatchedUp" */;
 			buildPhases = (
+				C42C6332DB054C1E8F0DCDF3 /* Check Pods Manifest.lock */,
 				6FBDE84D184A719D003F0CA4 /* Sources */,
 				6FBDE84E184A719D003F0CA4 /* Frameworks */,
 				6FBDE84F184A719D003F0CA4 /* Resources */,
+				E138FDDDC8464AD9B7A5F8E9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +362,9 @@
 			files = (
 				6FBDE870184A719D003F0CA4 /* Images.xcassets in Resources */,
 				6FBDE85F184A719D003F0CA4 /* InfoPlist.strings in Resources */,
+				6FA3C83F185ACC6200C93653 /* avatar-placeholder.png in Resources */,
 				6FBDE868184A719D003F0CA4 /* Main.storyboard in Resources */,
+				6F03DFED1853D06400E4428E /* ProfileImage1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,15 +378,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C42C6332DB054C1E8F0DCDF3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E138FDDDC8464AD9B7A5F8E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FBDE84D184A719D003F0CA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FBDE86E184A719D003F0CA4 /* CCSecondViewController.m in Sources */,
+				6F03DFF11853D29100E4428E /* CCTestUser.m in Sources */,
+				6F03DFDE18537BE100E4428E /* CCHomeViewController.m in Sources */,
+				6FA3C83A185AA7EF00C93653 /* CCMatchViewController.m in Sources */,
+				6FA3C837185AA7EA00C93653 /* CCMatchesViewController.m in Sources */,
+				6FBDE892184A960B003F0CA4 /* CCConstants.m in Sources */,
+				6F03DFEB185386A400E4428E /* CCProfileViewController.m in Sources */,
+				6FBDE88E184A7226003F0CA4 /* CCLoginViewController.m in Sources */,
+				6F03DFE21853802E00E4428E /* CCSettingsViewController.m in Sources */,
 				6FBDE865184A719D003F0CA4 /* CCAppDelegate.m in Sources */,
-				6FBDE86B184A719D003F0CA4 /* CCFirstViewController.m in Sources */,
 				6FBDE861184A719D003F0CA4 /* main.m in Sources */,
+				6FA3C83D185AA7F400C93653 /* CCChatViewController.m in Sources */,
+				6F03DFE6185382AC00E4428E /* CCEditProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +551,7 @@
 		};
 		6FBDE887184A719D003F0CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DDCE11EFAD42F19C7B833B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -395,6 +565,7 @@
 		};
 		6FBDE888184A719D003F0CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DDCE11EFAD42F19C7B833B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,6 +638,7 @@
 				6FBDE888184A719D003F0CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FBDE889184A719D003F0CA4 /* Build configuration list for PBXNativeTarget "MatchedUpTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +647,7 @@
 				6FBDE88B184A719D003F0CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

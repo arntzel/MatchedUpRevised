@@ -1,5 +1,5 @@
 //
-//  CCSecondViewController.h
+//  CCLoginViewController.h
 //  MatchedUp
 //
 //  Created by Eliot Arntz on 11/30/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCSecondViewController : UIViewController
+@interface CCLoginViewController : UIViewController
 
 @end
