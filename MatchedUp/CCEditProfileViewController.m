@@ -61,6 +61,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)changeTextViewButtonPressed:(UIButton *)sender
+{
+    [self.tagLineTextView becomeFirstResponder];
+}
 
 
 

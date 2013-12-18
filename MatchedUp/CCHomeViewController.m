@@ -18,10 +18,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (strong, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *ageLabel;
-@property (strong, nonatomic) IBOutlet UILabel *tagLineLabel;
 @property (strong, nonatomic) IBOutlet UIButton *likeButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
 @property (strong, nonatomic) IBOutlet UIButton *dislikeButton;
+@property (weak, nonatomic) IBOutlet UIView *buttonContainerView;
+@property (weak, nonatomic) IBOutlet UIView *labelContainerView;
 
 @property (strong, nonatomic) NSArray *photos;
 @property (strong, nonatomic) PFObject *photo;
@@ -71,8 +72,27 @@
         }
     }];
     
+    [self setupViews];
     //do additional
     
+}
+
+- (void)setupViews
+{
+    // add shadows here!
+    [self addShadowForView:self.buttonContainerView];
+    [self addShadowForView:self.labelContainerView];
+    self.photoImageView.layer.masksToBounds = YES;
+    //[self addShadowForView:self.photoImageView];
+}
+
+- (void)addShadowForView:(UIView *)view
+{
+    view.layer.masksToBounds = NO;
+    view.layer.cornerRadius = 4; // if you like rounded corners
+    view.layer.shadowOffset = CGSizeMake(0, 1);
+    view.layer.shadowRadius = 1;
+    view.layer.shadowOpacity = 0.25;
 }
 
 - (void)didReceiveMemoryWarning
@@ -186,7 +206,6 @@
 {
     self.firstNameLabel.text = self.photo[kCCPhotoUserKey][kCCUserProfileKey][kCCUserProfileFirstNameKey];
     self.ageLabel.text = [NSString stringWithFormat:@"%@",self.photo[kCCPhotoUserKey][kCCUserProfileKey][kCCUserProfileAgeKey]];
-    self.tagLineLabel.text = self.photo[kCCPhotoUserKey][kCCUserTagLineKey];
 }
 
 - (void)setupNextPhoto
