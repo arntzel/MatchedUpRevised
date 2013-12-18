@@ -82,7 +82,7 @@
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Matched Up" id="xCe-4r-K0H">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="P04-st-wD0">
+                        <barButtonItem key="leftBarButtonItem" title="Chat" id="P04-st-wD0">
                             <connections>
                                 <action selector="chatBarButtonItemPressed:" destination="ihq-U5-SEZ" id="55E-ui-ly5"/>
                             </connections>
@@ -186,59 +186,42 @@
                         <viewControllerLayoutGuide type="bottom" id="w9M-tF-SBH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FWg-Aw-MCu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why are you awesome?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-m2-fYE">
-                                <rect key="frame" x="20" y="85" width="184" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-m2-fYE">
+                                <rect key="frame" x="0.0" y="288" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1w-mE-NO9">
-                                <rect key="frame" x="20" y="268" width="280" height="280"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mn7-Qn-OVu">
-                                <rect key="frame" x="20" y="132" width="280" height="128"/>
+                                <rect key="frame" x="0.0" y="317" width="320" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.61960784310000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnJ-5F-vMB">
-                                <rect key="frame" x="242" y="81" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Change!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeTextViewButtonPressed:" destination="PSz-as-CaW" eventType="touchUpInside" id="RqI-kf-Zko"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RL1-mq-M2b">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Ln3-fE-lv8">
-                            <connections>
-                                <action selector="saveBarButtonItemPressed:" destination="PSz-as-CaW" id="FLz-9o-cDg"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="RL1-mq-M2b"/>
                     <connections>
-                        <outlet property="profilePictureImageView" destination="Y1w-mE-NO9" id="8kE-2G-jxo"/>
-                        <outlet property="saveBarButtonItem" destination="Ln3-fE-lv8" id="rng-wL-rWU"/>
-                        <outlet property="tagLineTextView" destination="mn7-Qn-OVu" id="fC5-sq-HiK"/>
+                        <outlet property="profilePictureImageView" destination="Y1w-mE-NO9" id="N31-BF-J3p"/>
+                        <outlet property="tagLineTextView" destination="mn7-Qn-OVu" id="jYj-Nz-j57"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWP-IO-2v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1549" y="-476"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings View Controller - Settings-->
         <scene sceneID="G7H-nk-8Y1">
             <objects>
                 <viewController id="U6z-g7-897" customClass="CCSettingsViewController" sceneMemberID="viewController">
@@ -302,11 +285,10 @@
                                 <rect key="frame" x="251" y="324" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k02-ad-Qi9">
-                                <rect key="frame" x="20" y="518" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k02-ad-Qi9">
+                                <rect key="frame" x="20" y="451" width="280" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" title="Logout" backgroundImage="Logout">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -314,10 +296,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAb-BW-Zih">
-                                <rect key="frame" x="212" y="518" width="88" height="30"/>
+                                <rect key="frame" x="20" y="405" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Edit Profile">
+                                <state key="normal" title="Edit Profile" backgroundImage="EditProfile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -328,7 +311,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bya-BE-ygx"/>
+                    <navigationItem key="navigationItem" title="Settings" id="bya-BE-ygx"/>
                     <connections>
                         <outlet property="ageLabel" destination="bVU-b5-Zxr" id="3Mc-5b-6vS"/>
                         <outlet property="ageSlider" destination="YLw-br-YeH" id="xrN-yq-cQn"/>
@@ -543,10 +526,12 @@
     </scenes>
     <resources>
         <image name="DislikeIcon" width="38" height="37"/>
+        <image name="EditProfile" width="253" height="32"/>
         <image name="Facebook" width="200" height="25"/>
         <image name="InfoIcon" width="39" height="37"/>
         <image name="LikeIcon" width="55" height="37"/>
         <image name="Logo" width="134" height="94"/>
+        <image name="Logout" width="253" height="32"/>
         <image name="UserImage" width="320" height="221"/>
     </resources>
     <color key="tintColor" red="0.047058823529411764" green="0.61960784313725492" blue="1" alpha="1" colorSpace="calibratedRGB"/>

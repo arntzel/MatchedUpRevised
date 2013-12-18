@@ -10,9 +10,8 @@
 
 @interface CCEditProfileViewController ()
 
-@property (strong, nonatomic) IBOutlet UITextView *tagLineTextView;
-@property (strong, nonatomic) IBOutlet UIImageView *profilePictureImageView;
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *saveBarButtonItem;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePictureImageView;
+@property (weak, nonatomic) IBOutlet UITextView *tagLineTextView;
 
 @end
 
@@ -32,6 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    
     PFQuery *query = [PFQuery queryWithClassName:kCCPhotoClassKey];
     [query whereKey:kCCPhotoUserKey equalTo:[PFUser currentUser]];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -44,6 +44,10 @@
         }
     }];
     self.tagLineTextView.text = [[PFUser currentUser] objectForKey:kCCUserTagLineKey];
+    
+    // Value for key path
+    self.title = [PFUser currentUser][kCCUserProfileKey][kCCUserProfileFirstNameKey];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,10 +65,6 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)changeTextViewButtonPressed:(UIButton *)sender
-{
-    [self.tagLineTextView becomeFirstResponder];
-}
 
 
 
