@@ -18,6 +18,14 @@
 
 @implementation CCMatchesViewController
 
+-(NSMutableArray *)availableChatRoomsArray
+{
+    if (!_availableChatRoomsArray){
+        _availableChatRoomsArray = [[NSMutableArray alloc] init];
+    }
+    return _availableChatRoomsArray;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,9 +43,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    //    [self createFakeChats];
-    _availableChatRoomsArray = [[NSMutableArray alloc] init];
-    
     [self updateAvailableChatRooms];
 
 }
@@ -46,6 +51,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CCChatViewController *chatVC = segue.destinationViewController;
+    NSIndexPath *indexPath = sender;
+    chatVC.chatRoom = [self.availableChatRoomsArray objectAtIndex:indexPath.row];
 }
 
 #pragma mark - Helpers
@@ -98,6 +110,7 @@
     
     //need a placeholder image here.
     cell.imageView.image = [UIImage imageNamed:@"avatar-placeholder.png"];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
     PFQuery *queryForPhoto = [[PFQuery alloc] initWithClassName:@"Photo"];
     [queryForPhoto whereKey:@"user" equalTo:likedUser];
@@ -111,7 +124,6 @@
             }];
         }
     }];
-        
     return cell;
 }
 
@@ -119,9 +131,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CCChatViewController *chatViewController = [[CCChatViewController alloc] init];
-    chatViewController.chatroom = [self.availableChatRoomsArray objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:chatViewController animated:YES];
+    [self performSegueWithIdentifier:@"matchesToChatSegue" sender:indexPath];
 }
 
 @end

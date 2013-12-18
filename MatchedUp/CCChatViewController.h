@@ -10,6 +10,6 @@
 
 @interface CCChatViewController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource>
 
-@property (strong, nonatomic) PFObject *chatroom;
+@property (strong, nonatomic) PFObject *chatRoom;
 
 @end

@@ -507,6 +507,7 @@
                     <navigationItem key="navigationItem" id="2xo-GK-Fi8"/>
                     <connections>
                         <outlet property="tableView" destination="XfQ-t3-fCa" id="jdX-Fu-zv2"/>
+                        <segue destination="sJ7-T5-eC8" kind="push" identifier="matchesToChatSegue" id="Fll-sy-1H7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgC-VP-zpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -526,6 +527,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uFy-zd-WTQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nvK-bO-8I6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
